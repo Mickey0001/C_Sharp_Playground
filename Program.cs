@@ -1,10 +1,5 @@
 ﻿using System;
-//One line comment 
-/*
- Multi
- line
- comment
-     */
+
 namespace HelloWorld
 {
     class Program
