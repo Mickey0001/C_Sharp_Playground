@@ -32,7 +32,7 @@ namespace Variables
             Console.WriteLine("Your full name is: " + myFirstName + " " + myLastName);
             Console.ReadLine();
 
-
+ 
         }
     }
 }
