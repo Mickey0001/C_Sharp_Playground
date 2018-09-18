@@ -1,2 +1,2 @@
 # SeeSharpPractice
-For practicing C# 
+For learning Microsfot tech: C# and ASP.NET MVC 
