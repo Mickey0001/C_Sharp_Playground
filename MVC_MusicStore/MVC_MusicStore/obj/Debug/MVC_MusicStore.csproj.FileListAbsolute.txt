@@ -89,3 +89,7 @@ C:\Users\Mirza\Dropbox\SeeSharpPractice\MVC_MusicStore\MVC_MusicStore\obj\Debug\
 C:\Users\Mirza\Dropbox\SeeSharpPractice\MVC_MusicStore\MVC_MusicStore\obj\Debug\MVC_MusicStore.csproj.CopyComplete
 C:\Users\Mirza\Dropbox\SeeSharpPractice\MVC_MusicStore\MVC_MusicStore\obj\Debug\MVC_MusicStore.dll
 C:\Users\Mirza\Dropbox\SeeSharpPractice\MVC_MusicStore\MVC_MusicStore\obj\Debug\MVC_MusicStore.pdb
+C:\Users\Mirza\Dropbox\SeeSharpPractice\MVC_MusicStore\MVC_MusicStore\bin\EntityFramework.dll
+C:\Users\Mirza\Dropbox\SeeSharpPractice\MVC_MusicStore\MVC_MusicStore\bin\EntityFramework.SqlServer.dll
+C:\Users\Mirza\Dropbox\SeeSharpPractice\MVC_MusicStore\MVC_MusicStore\bin\EntityFramework.xml
+C:\Users\Mirza\Dropbox\SeeSharpPractice\MVC_MusicStore\MVC_MusicStore\bin\EntityFramework.SqlServer.xml

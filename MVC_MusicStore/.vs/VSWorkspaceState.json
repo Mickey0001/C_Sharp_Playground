@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MVC_MusicStore",
+    "\\MVC_MusicStore\\Controllers",
+    "\\MVC_MusicStore\\Models"
   ],
   "SelectedNode": "\\MVC_MusicStore.sln",
   "PreviewInSolutionExplorer": false
