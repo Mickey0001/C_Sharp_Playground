@@ -20,5 +20,7 @@ namespace MVC_MusicStore.Models
         }
 
         public System.Data.Entity.DbSet<MVCMusicStore.Models.Album> Albums { get; set; }
+
+        public System.Data.Entity.DbSet<MVCMusicStore.Models.Review> Reviews { get; set; }
     }
 }
