@@ -34,3 +34,5 @@ C:\Users\Mirza\Dropbox\SeeSharpPractice\MVC_MusicStore\MVC_MusicStore.Tests\obj\
 C:\Users\Mirza\Dropbox\SeeSharpPractice\MVC_MusicStore\MVC_MusicStore.Tests\obj\Debug\MVC_MusicStore.Tests.csproj.CopyComplete
 C:\Users\Mirza\Dropbox\SeeSharpPractice\MVC_MusicStore\MVC_MusicStore.Tests\obj\Debug\MVC_MusicStore.Tests.dll
 C:\Users\Mirza\Dropbox\SeeSharpPractice\MVC_MusicStore\MVC_MusicStore.Tests\obj\Debug\MVC_MusicStore.Tests.pdb
+C:\Users\Mirza\Dropbox\SeeSharpPractice\MVC_MusicStore\MVC_MusicStore.Tests\bin\Debug\EntityFramework.dll
+C:\Users\Mirza\Dropbox\SeeSharpPractice\MVC_MusicStore\MVC_MusicStore.Tests\bin\Debug\EntityFramework.xml
