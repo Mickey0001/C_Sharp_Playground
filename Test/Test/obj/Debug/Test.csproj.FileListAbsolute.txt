@@ -1,7 +1,0 @@
-C:\Users\Mirza\Dropbox\SeeSharpPractice\Test\Test\bin\Debug\Test.exe.config
-C:\Users\Mirza\Dropbox\SeeSharpPractice\Test\Test\bin\Debug\Test.exe
-C:\Users\Mirza\Dropbox\SeeSharpPractice\Test\Test\bin\Debug\Test.pdb
-C:\Users\Mirza\Dropbox\SeeSharpPractice\Test\Test\obj\Debug\Test.csprojAssemblyReference.cache
-C:\Users\Mirza\Dropbox\SeeSharpPractice\Test\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
-C:\Users\Mirza\Dropbox\SeeSharpPractice\Test\Test\obj\Debug\Test.exe
-C:\Users\Mirza\Dropbox\SeeSharpPractice\Test\Test\obj\Debug\Test.pdb
