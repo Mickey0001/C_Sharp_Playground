@@ -1,0 +1,7 @@
+C:\Users\Mirza\Dropbox\SeeSharpPractice\Grades\Grades\bin\Debug\Grades.exe.config
+C:\Users\Mirza\Dropbox\SeeSharpPractice\Grades\Grades\bin\Debug\Grades.exe
+C:\Users\Mirza\Dropbox\SeeSharpPractice\Grades\Grades\bin\Debug\Grades.pdb
+C:\Users\Mirza\Dropbox\SeeSharpPractice\Grades\Grades\obj\Debug\Grades.csprojAssemblyReference.cache
+C:\Users\Mirza\Dropbox\SeeSharpPractice\Grades\Grades\obj\Debug\Grades.csproj.CoreCompileInputs.cache
+C:\Users\Mirza\Dropbox\SeeSharpPractice\Grades\Grades\obj\Debug\Grades.exe
+C:\Users\Mirza\Dropbox\SeeSharpPractice\Grades\Grades\obj\Debug\Grades.pdb
