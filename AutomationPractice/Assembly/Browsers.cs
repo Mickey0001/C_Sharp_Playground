@@ -2,7 +2,7 @@
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 
-namespace SeleniumProject
+namespace AutomationPractice
 {
     public class Browsers
     {

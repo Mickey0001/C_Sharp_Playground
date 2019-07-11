@@ -1,6 +1,6 @@
 ﻿using SeleniumExtras.PageObjects;
 
-namespace SeleniumProject
+namespace AutomationPractice
 {
     public static class Pages
     {

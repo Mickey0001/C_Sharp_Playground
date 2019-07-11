@@ -2,7 +2,7 @@
 using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
-namespace SeleniumProject
+namespace AutomationPractice
 {
     public class Home
     {
