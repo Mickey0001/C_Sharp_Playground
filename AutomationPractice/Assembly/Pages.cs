@@ -1,13 +1,14 @@
-﻿using SeleniumExtras.PageObjects;
+﻿using AutomationPractice;
+using SeleniumExtras.PageObjects;
 
-namespace AutomationPractice
+namespace SeleniumProject
 {
     public static class Pages
     {
         private static T getPages() where T : new()
         {
             var page = new T();
-            PageFactory.InitElements(Browsers.getDriver, page);
+            PageFactory.InitElements(WebDriverFacade.getDriver, page);
             return page;
         }
         public static Home home

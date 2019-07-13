@@ -16,12 +16,12 @@ namespace AutomationPractice
         //Actions
         public void isAt()
         {
-            Assert.IsTrue(Browsers.Title.Equals("nopCommerce demo store"));
+            Assert.IsTrue(WebDriverFacade.Title.Equals("nopCommerce demo store"));
         }
         public void EnterSearchText(string searchText)
         {
-            Assert.IsTrue(SearchStoreInput.Displayed);
-            SearchStoreInput.SendKeys(searchText);
+            Assert.IsTrue(SearchStoreInput.ControlDisplayed());
+            SearchStoreInput.SendKeysWrapper(searchText, "Search input");
         }
     }
 }
