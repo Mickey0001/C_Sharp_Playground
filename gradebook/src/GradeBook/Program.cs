@@ -6,7 +6,8 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Mirza is the best");
+            var name = "Mirza";
+            Console.WriteLine( name + " " + "is the best");
         }
     }
 }
