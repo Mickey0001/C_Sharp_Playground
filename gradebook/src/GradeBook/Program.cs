@@ -6,7 +6,14 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"{args[0]} is the best ");
+            if(args.Length > 0)
+            {
+               Console.WriteLine($"{args[0]} is the best ");
+            }
+            else 
+            {
+                Console.WriteLine("Meh");
+            }
         }
     }
 }
