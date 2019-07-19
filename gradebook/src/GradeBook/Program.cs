@@ -6,11 +6,9 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-           double x = 34.1;
+           var numbers = new[] { 12.3, 13.2, 14.5 };
 
-            var a = 1;
-            int b = 4;
-            IAsyncResult = a + b;
+            var result = numbers[0] + numbers[1] + numbers[2];
             Console.WriteLine(result);
 
             if(args.Length > 0)
