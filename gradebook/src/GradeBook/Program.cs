@@ -6,9 +6,15 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-           var numbers = new[] { 12.3, 13.2, 14.5 };
+           var numbers = new[] { 12.3, 17.2, 14.5 };
 
-            var result = numbers[0] + numbers[1] + numbers[2];
+            var result = 0.0;
+
+            foreach(var number in numbers)
+            {
+                result += number;
+            }
+
             Console.WriteLine(result);
 
             if(args.Length > 0)
