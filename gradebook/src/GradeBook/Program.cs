@@ -8,7 +8,7 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            var book = new Book();
+            var book = new Book("Mirzaki Gradebookie");
             book.AddGrade(88.1);
             book.AddGrade(90.5);
             book.grades.Add(101);
