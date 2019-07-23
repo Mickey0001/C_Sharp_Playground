@@ -10,6 +10,8 @@ namespace GradeBook
         {
             var book = new Book();
             book.AddGrade(88.1);
+            book.AddGrade(90.5);
+            book.grades.Add(101);
 
             var grades = new List<double>() { 11.3, 35.2, 19.5 };
             grades.Add(15.5);

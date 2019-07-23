@@ -2,9 +2,9 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
-    class Book
+    public class Book
     {
-        public Book()
+        public Book(string name)
         {
             grades = new List<double>();
         }
@@ -13,6 +13,7 @@ namespace GradeBook
         {
             grades.Add(grade);
         }
-        List<double> grades;
+        private List<double> grades;
+        private string name;
     }
 }
