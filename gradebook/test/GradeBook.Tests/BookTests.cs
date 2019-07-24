@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace Tests
+namespace GradeBook.Tests
 {
     public class BookTests
     {
@@ -13,7 +13,7 @@ namespace Tests
         public void Test1()
         {
             //Arrange
-            var book = new BookTests("");
+            var book = new Book("");
 
             //Act
            
