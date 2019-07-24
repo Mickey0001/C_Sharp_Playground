@@ -13,15 +13,11 @@ namespace Tests
         public void Test1()
         {
             //Arrange
-            var x = 5;
-            var y = 2;
-            var expected = 7;
+            var book = new BookTests("");
 
             //Act
-            var actual = x + y;
-
+           
             //Assert
-            Assert.AreEqual(expected, actual);
-        }
+           
     }
 }
