@@ -10,6 +10,20 @@ namespace GradeBook.Tests
         {
         }
 
+               [Test]
+        public void Test1()
+        {
+            var book1 = GetBook("Book1");
+            SetName(book1, "Books of Knjige");
+
+            Assert.AreEqual("Book1", book1.Name);
+        }
+
+        private void SetName(Book book, string name)
+        {
+            book.Name = name;
+        }
+
         [Test]
         public void GetBookReturnsDifferentObjects()
         {
