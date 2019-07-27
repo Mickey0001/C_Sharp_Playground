@@ -10,18 +10,22 @@ namespace GradeBook.Tests
         {
         }
         [Test]
-        public void CShaprCanPassByValue()
+        public void ValuesAlsoPassedByValue()
         {
-            var book1 = GetBook("Book1");
-            GetBookSetName(ref book1, "Sve mi jos mirise na new");
+            var x = GetInt();
+            SetInt(x);
 
-            Assert.AreEqual("Sve mi jos mirise na new", book1.Name);
+            Assert.AreEqual(42, x);
         }
 
-        private void GetBookSetName(ref Book book, string name)
+        private void SetInt(int x)
         {
-            book = new Book(name);
-            book.Name = name;
+            x = 42;
+        }
+
+        private int GetInt()
+        {
+            return 3;
         }
 
         
