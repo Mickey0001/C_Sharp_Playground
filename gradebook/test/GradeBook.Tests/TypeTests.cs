@@ -9,6 +9,22 @@ namespace GradeBook.Tests
         public void Setup()
         {
         }
+
+        [Test]
+        public void StrinsBehaveLikeValueType()
+        {
+            string name = "Mirzaki";
+            var upper = MakeUppercase(name);
+
+            Assert.AreEqual("Mirzaki", name);
+            Assert.AreEqual("MIRZAKI", upper);
+        }
+
+        private string MakeUppercase(string parameter)
+        {
+            return parameter.ToUpper();
+        }
+
         [Test]
         public void ValuesAlsoPassedByValue()
         {
