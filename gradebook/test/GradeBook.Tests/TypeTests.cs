@@ -9,9 +9,23 @@ namespace GradeBook.Tests
         public void Setup()
         {
         }
+        
+        [Test]
+        public void GetBookSetName()
+        {
+            var book1 = GetBook("Book1");
+            GetBookSetName(book1, "Books of Knjige");
 
-               [Test]
-        public void Test1()
+            Assert.AreEqual("Books of Knjige", book1.Name);
+        }
+
+        private void GetBookSetName(Book book, string name)
+        {
+            book = new Book(name);
+        }
+
+        [Test]
+        public void TesSetName()
         {
             var book1 = GetBook("Book1");
             SetName(book1, "Books of Knjige");
