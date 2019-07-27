@@ -9,9 +9,24 @@ namespace GradeBook.Tests
         public void Setup()
         {
         }
+        [Test]
+        public void CShaprCanPassByValue()
+        {
+            var book1 = GetBook("Book1");
+            GetBookSetName(ref book1, "Sve mi jos mirise na new");
+
+            Assert.AreEqual("Sve mi jos mirise na new", book1.Name);
+        }
+
+        private void GetBookSetName(ref Book book, string name)
+        {
+            book = new Book(name);
+            book.Name = name;
+        }
+
         
         [Test]
-        public void GetBookSetName()
+        public void CShaprIsPassByValue()
         {
             var book1 = GetBook("Book1");
             GetBookSetName(book1, "Books of Knjige");
@@ -22,6 +37,7 @@ namespace GradeBook.Tests
         private void GetBookSetName(Book book, string name)
         {
             book = new Book(name);
+            book.Name = name;
         }
 
         [Test]
