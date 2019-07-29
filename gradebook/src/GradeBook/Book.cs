@@ -23,6 +23,22 @@ namespace GradeBook
            }
         }
 
+        public void AddALetterGrade(char letter)
+        {
+            switch(letter)
+            {
+                case 'A':
+                    AddGrade(90);
+                    break;
+                case 'B':
+                    AddGrade(80);
+                    break;
+
+                default:
+                    AddGrade(0);
+            }
+        }
+
 
         public Statistics GetStatistics()
         {   
