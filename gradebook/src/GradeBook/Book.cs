@@ -19,7 +19,7 @@ namespace GradeBook
            }
            else
            {
-               Console.WriteLine("Invalid Value");
+               throw new ArgumentException($"Invalid {nameof(grade)}");
            }
         }
 
@@ -36,6 +36,7 @@ namespace GradeBook
 
                 default:
                     AddGrade(0);
+                    break;
             }
         }
 
