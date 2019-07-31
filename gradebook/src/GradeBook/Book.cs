@@ -3,7 +3,15 @@ using System.Collections.Generic;
 
 namespace GradeBook
 {
-    public class Book
+    public class NamedObject
+    {
+        public string Name
+        {
+            get;
+            set;
+        }
+    }
+    public class Book : NamedObject
     {
         public Book(string name)
         {
@@ -13,19 +21,19 @@ namespace GradeBook
 
         public void AddGrade(double grade)
         {
-           if(grade <= 100 && grade >= 0)
-           {
+            if (grade <= 100 && grade >= 0)
+            {
                 grades.Add(grade);
-           }
-           else
-           {
-               throw new ArgumentException($"Invalid {nameof(grade)}");
-           }
+            }
+            else
+            {
+                throw new ArgumentException($"Invalid {nameof(grade)}");
+            }
         }
 
         public void AddALetterGrade(char letter)
         {
-            switch(letter)
+            switch (letter)
             {
                 case 'A':
                     AddGrade(90);
@@ -42,19 +50,19 @@ namespace GradeBook
 
 
         public Statistics GetStatistics()
-        {   
+        {
             var result = new Statistics();
             result.Average = 0.0;
             result.High = double.MinValue;
             result.Low = double.MaxValue;
 
             var i = 0;
-            while(i < grades.Count)
+            while (i < grades.Count)
             {
                 result.High = Math.Max(grades[i], result.High);
                 result.Low = Math.Min(grades[i], result.Low);
                 result.Average += grades[i];
-                i +=1;
+                i += 1;
             }
 
             result.Average /= grades.Count;
@@ -62,7 +70,5 @@ namespace GradeBook
             return result;
         }
         private List<double> grades;
-
-        public string Name;
-        }
     }
+}
