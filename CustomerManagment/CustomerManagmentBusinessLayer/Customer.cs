@@ -27,6 +27,15 @@
             }
         }
         public static int InstanceCount { get; set; }
+
+        public bool Validate()
+        {
+            var isValid = true;
+
+            if (string.IsNullOrWhiteSpace(LastName)) isValid = false;
+            if (string.IsNullOrWhiteSpace(EmailAdrress)) isValid = false;
+
+            return isValid;
+        }
     }
- 
 }
