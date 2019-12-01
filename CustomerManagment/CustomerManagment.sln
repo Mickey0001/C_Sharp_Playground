@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagmentBusinessLayer", "CustomerManagmentBusinessLayer\CustomerManagmentBusinessLayer.csproj", "{D058D69E-E7E3-4E6C-8C46-B12072374A8C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{59057B0F-A707-44D7-8916-970BF0930B93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMBLTest", "Tests\CMBLTest\CMBLTest.csproj", "{A813D3FC-FF5C-4858-9A6C-988D78EAEC6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{D058D69E-E7E3-4E6C-8C46-B12072374A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D058D69E-E7E3-4E6C-8C46-B12072374A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D058D69E-E7E3-4E6C-8C46-B12072374A8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A813D3FC-FF5C-4858-9A6C-988D78EAEC6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A813D3FC-FF5C-4858-9A6C-988D78EAEC6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A813D3FC-FF5C-4858-9A6C-988D78EAEC6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A813D3FC-FF5C-4858-9A6C-988D78EAEC6B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A813D3FC-FF5C-4858-9A6C-988D78EAEC6B} = {59057B0F-A707-44D7-8916-970BF0930B93}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A2ADC33A-A1F8-4CE1-9F31-3B833A6CAC86}
