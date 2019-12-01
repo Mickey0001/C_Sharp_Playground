@@ -13,8 +13,6 @@
                 return LastName + ", " + FirstName;
             }
         }
-
-        private string lastName;
         public string LastName
         {
             get
@@ -27,6 +25,16 @@
             }
         }
         public static int InstanceCount { get; set; }
+
+        public Customer Retrieve(int customerID)
+        {
+            return new Customer();
+        }
+
+        public bool Save()
+        {
+            return true;
+        }
 
         public bool Validate()
         {
