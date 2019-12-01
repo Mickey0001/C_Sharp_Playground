@@ -57,5 +57,20 @@ namespace CMBLTest
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void ValideteIsLastNameMissing()
+        {
+            var customer = new Customer
+            {
+                EmailAdrress = "futofutavi@footer.com"
+            };
+
+            var expected = false;
+
+            var actual = customer.Validate();
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
