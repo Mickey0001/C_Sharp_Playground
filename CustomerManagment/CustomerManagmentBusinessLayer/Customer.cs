@@ -1,4 +1,6 @@
-﻿namespace CustomerManagmentBusinessLayer
+﻿using System.Collections.Generic;
+
+namespace CustomerManagmentBusinessLayer
 {
     public class Customer
     {
@@ -13,15 +15,16 @@
                 return LastName + ", " + FirstName;
             }
         }
+
         public string LastName
         {
             get
             {
-                return lastName;
+                return LastName;
             }
             set
             {
-                lastName = value;
+                LastName = value;
             }
         }
         public static int InstanceCount { get; set; }
@@ -29,6 +32,11 @@
         public Customer Retrieve(int customerID)
         {
             return new Customer();
+        }
+
+        public List<Customer> Retrieve()
+        {
+            return new List<Customer>();
         }
 
         public bool Save()
