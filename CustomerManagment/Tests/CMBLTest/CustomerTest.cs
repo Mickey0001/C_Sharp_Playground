@@ -23,6 +23,7 @@ namespace CMBLTest
             //Assert
             Assert.AreEqual(expected, actual);
         }
+
         [TestMethod]
         public void StaticTest()
         {
@@ -39,6 +40,22 @@ namespace CMBLTest
             Customer.InstanceCount += 1;
 
             Assert.AreEqual(3, Customer.InstanceCount);
+        }
+
+        [TestMethod]
+        public void ValidateIfValid()
+        {
+            var customer = new Customer
+            {
+                LastName = "Fotavac",
+                EmailAdrress = "futofutavi@footer.com"
+            };
+
+            var expected = true;
+
+            var actual = customer.Validate();
+
+            Assert.AreEqual(expected, actual);
         }
     }
 }
