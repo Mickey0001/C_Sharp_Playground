@@ -14,9 +14,9 @@
             //Example of a populated customer
             if (customerID == 1)
             {
-                customer.EmailAdrress = "bobosmrad@redtube.com";
-                customer.FirstName = "Bobo";
-                customer.LastName = "Smard";
+                customer.EmailAdrress = "bobosmard@xvideos.com";
+                customer.FirstName = "Bobo ";
+                customer.LastName = "Smrad";
             }
             return customer;
 

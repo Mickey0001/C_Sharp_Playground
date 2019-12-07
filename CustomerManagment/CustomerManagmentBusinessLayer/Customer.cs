@@ -26,15 +26,16 @@ namespace CustomerManagmentBusinessLayer
             }
         }
 
+        private string _lastName;
         public string LastName
         {
             get
             {
-                return LastName;
+                return _lastName;
             }
             set
             {
-                LastName = value;
+                _lastName = value;
             }
         }
         public static int InstanceCount { get; set; }
