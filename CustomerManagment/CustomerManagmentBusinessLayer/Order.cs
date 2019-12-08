@@ -17,16 +17,6 @@ namespace CustomerManagmentBusinessLayer
         public DateTimeOffset? OrderDate { get; set; }
         public int OrderID { get; set; }
 
-        public Order Retrieve(int orderID)
-        {
-            return new Order();
-        }
-
-        public bool Save()
-        {
-            return true;
-        }
-
         public bool Validate()
         {
             var isValid = true;
