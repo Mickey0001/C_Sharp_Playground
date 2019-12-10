@@ -1,7 +1,16 @@
-﻿namespace CustomerManagmentBusinessLayer
+﻿using System.Linq;
+
+namespace CustomerManagmentBusinessLayer
 {
     public class CustomerRepository
     {
+        public CustomerRepository()
+        {
+            addressRepository = new AddressRepository();
+        }
+
+        private AddressRepository addressRepository { get; set; }
+
         public Customer Retrieve(int customerID)
         {
             //Create the instance of the Customer class
@@ -17,6 +26,7 @@
                 customer.EmailAdrress = "bobosmard@xvideos.com";
                 customer.FirstName = "Bobo ";
                 customer.LastName = "Smrad";
+                customer.AddressList = addressRepository.RetrieveByCustomerID(customerID).ToList();
             }
             return customer;
 
