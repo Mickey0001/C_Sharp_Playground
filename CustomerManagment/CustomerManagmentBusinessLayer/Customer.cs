@@ -4,7 +4,7 @@ namespace CustomerManagmentBusinessLayer
 {
     public class Customer
     {
-        public Customer()
+        public Customer(): this(0)
         {
 
         }
@@ -12,10 +12,13 @@ namespace CustomerManagmentBusinessLayer
         public Customer(int customerID)
         {
             CustomerID = customerID;
+            AddressList = new List<Address>();
         }
 
+        public List<Address> AddressList { get; set;  }
         public int CustomerID { get; private set; }
         public string EmailAdrress { get; set; }
+
         public string FirstName { get; set; }
 
         public string FullName
