@@ -17,6 +17,7 @@ namespace CustomerManagmentBusinessLayer
 
         public List<Address> AddressList { get; set;  }
         public int CustomerID { get; private set; }
+        public int CustomerType { get; set; }
         public string EmailAdrress { get; set; }
 
         public string FirstName { get; set; }
