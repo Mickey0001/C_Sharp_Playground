@@ -44,6 +44,8 @@ namespace CustomerManagmentBusinessLayer
         }
         public static int InstanceCount { get; set; }
 
+        public override string ToString() => FullName;
+
         public bool Validate()
         {
             var isValid = true;

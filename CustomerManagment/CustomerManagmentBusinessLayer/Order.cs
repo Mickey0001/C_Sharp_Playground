@@ -22,6 +22,8 @@ namespace CustomerManagmentBusinessLayer
         public List<OrderItem> OrderItems { get; set; }
         public int ShippingAddressID { get; set; }
 
+        public override string ToString() => $"{OrderDate.Value.Date}({OrderID})";
+
         public bool Validate()
         {
             var isValid = true;
