@@ -21,7 +21,27 @@ namespace CustomerManagmentBusinessLayer
         }
         public bool Save(Product product)
         {
-            return true;
+            var success = true;
+
+            if(product.HasChanges)
+            {
+                if(product.IsValid)
+                {
+                    if(product.IsNew)
+                    {
+                        //Call an imaginery store procedure
+                    }
+                    else
+                    {
+                        //Call an imaginery updated sproc
+                    }
+                }
+                else
+                {
+                    success = false;
+                }
+            }
+            return success;
         }
      
     }
