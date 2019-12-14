@@ -1,6 +1,6 @@
 ﻿namespace CustomerManagmentBusinessLayer
 {
-    public class Product
+    public class Product : EntityBase
     {
         public Product()
         {
@@ -19,7 +19,7 @@
 
         public override string ToString() => ProductName;
 
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 
