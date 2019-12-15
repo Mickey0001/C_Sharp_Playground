@@ -4,8 +4,9 @@ namespace Customer.Common
 {
     public static class StringHandler
     {
-     public static string InsertSpaces(string source)
+     public static string InsertSpaces(this string source)
         {
+            //Inset spaces before each capital letter in a string
             string result = string.Empty;
 
             if (!String.IsNullOrWhiteSpace(source))
