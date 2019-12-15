@@ -12,7 +12,7 @@ namespace Customer.CommonTest
             var source = "ImperialBlaster";
             var expected = "Imperial Blaster";
 
-            var actual = StringHandler.InsertSpaces(source);
+            var actual = source.InsertSpaces();
 
             Assert.AreEqual(expected, actual);
         }
@@ -23,7 +23,7 @@ namespace Customer.CommonTest
             var source = "Imperial Blaster";
             var expected = "Imperial Blaster";
 
-            var actual = StringHandler.InsertSpaces(source);
+            var actual = source.InsertSpaces();
 
             Assert.AreEqual(expected, actual);
         }
