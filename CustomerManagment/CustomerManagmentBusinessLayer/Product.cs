@@ -23,8 +23,7 @@ namespace CustomerManagmentBusinessLayer
         {
             get
             {
-                var stringHandler = new StringHandler();
-                return stringHandler.InsertSpaces(_productName);
+                return StringHandler.InsertSpaces(_productName);
             }
             set
             {
