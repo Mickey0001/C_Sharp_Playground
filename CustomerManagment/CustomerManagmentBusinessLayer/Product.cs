@@ -1,4 +1,6 @@
-﻿namespace CustomerManagmentBusinessLayer
+﻿using Customer.Common;
+
+namespace CustomerManagmentBusinessLayer
 {
     public class Product : EntityBase
     {
@@ -21,7 +23,8 @@
         {
             get
             {
-                return _productName;
+                var stringHandler = new StringHandler();
+                return stringHandler.InsertSpaces(_productName);
             }
             set
             {
