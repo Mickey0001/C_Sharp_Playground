@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System;
+using System.Data;
 
 namespace CustomerManagmentBusinessLayer
 {
@@ -43,6 +45,8 @@ namespace CustomerManagmentBusinessLayer
             }
         }
         public static int InstanceCount { get; set; }
+
+        public string Log() => $"{CustomerID}: {FullName} Email: {EmailAdrress} Status: {EntityState.ToString()}";
 
         public override string ToString() => FullName;
 
