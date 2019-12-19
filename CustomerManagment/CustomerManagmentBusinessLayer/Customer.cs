@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
-using System;
-using System.Data;
+using Customer.Common;
 
 namespace CustomerManagmentBusinessLayer
 {
-    public class Customer
+    public class Customer : EntityBase, ILoggable
     {
         public Customer(): this(0)
         {
@@ -50,7 +49,7 @@ namespace CustomerManagmentBusinessLayer
 
         public override string ToString() => FullName;
 
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 
@@ -58,6 +57,11 @@ namespace CustomerManagmentBusinessLayer
             if (string.IsNullOrWhiteSpace(EmailAdrress)) isValid = false;
 
             return isValid;
+        }
+
+        string ILoggable.log()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

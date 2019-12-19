@@ -2,7 +2,7 @@
 
 namespace CustomerManagmentBusinessLayer
 {
-    public class Product : EntityBase
+    public class Product : EntityBase, ILoggable
     {
         public Product()
         {
@@ -33,6 +33,8 @@ namespace CustomerManagmentBusinessLayer
 
         public override string ToString() => ProductName;
 
+        public string Log() => $"{ProductID}: {ProductName} Detail: {ProductDescription} Status: {EntityState.ToString()}";
+
         public override bool Validate()
         {
             var isValid = true;
@@ -41,6 +43,11 @@ namespace CustomerManagmentBusinessLayer
             if (CurrentPrice == null) isValid = false;
 
             return isValid;
+        }
+
+        public string log()
+        {
+            throw new System.NotImplementedException();
         }
     }
 

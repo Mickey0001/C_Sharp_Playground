@@ -1,9 +1,10 @@
-﻿using System;
+﻿using Customer.Common;
+using System;
 using System.Collections.Generic;
 
 namespace CustomerManagmentBusinessLayer
 {
-    public class Order
+    public class Order : EntityBase, ILoggable 
     {
         public Order() : this(0)
         {
@@ -22,9 +23,16 @@ namespace CustomerManagmentBusinessLayer
         public List<OrderItem> OrderItems { get; set; }
         public int ShippingAddressID { get; set; }
 
+        public string Log() => $"{OrderID}: Date: {this.OrderDate.Value.Date} Status: {this.EntityState.ToString()}";
+
+        public string log()
+        {
+            throw new NotImplementedException();
+        }
+
         public override string ToString() => $"{OrderDate.Value.Date}({OrderID})";
 
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
 
