@@ -10,7 +10,7 @@ namespace CMBLTest
         public void FullNameTestValid()
         {
             //Arrange 
-            Customer customer = new Customer
+            CustomerDetails2 customer = new CustomerDetails2
             {
                 FirstName = "Bobo",
                 LastName = "Smrad"
@@ -27,25 +27,25 @@ namespace CMBLTest
         [TestMethod]
         public void StaticTest()
         {
-            var c1 = new Customer();
+            var c1 = new CustomerDetails2();
             c1.FirstName = "Zgembo";
-            Customer.InstanceCount += 1;
+            CustomerDetails2.InstanceCount += 1;
 
-            var c2 = new Customer();
+            var c2 = new CustomerDetails2();
             c2.FirstName = "Frodo";
-            Customer.InstanceCount += 1;
+            CustomerDetails2.InstanceCount += 1;
 
-            var c3 = new Customer();
+            var c3 = new CustomerDetails2();
             c3.FirstName = "Samwise";
-            Customer.InstanceCount += 1;
+            CustomerDetails2.InstanceCount += 1;
 
-            Assert.AreEqual(3, Customer.InstanceCount);
+            Assert.AreEqual(3, CustomerDetails2.InstanceCount);
         }
 
         [TestMethod]
         public void ValidateIfValid()
         {
-            var customer = new Customer
+            var customer = new CustomerDetails2
             {
                 LastName = "Fotavac",
                 EmailAdrress = "futofutavi@footer.com"
@@ -61,7 +61,7 @@ namespace CMBLTest
         [TestMethod]
         public void ValideteIsLastNameMissing()
         {
-            var customer = new Customer
+            var customer = new CustomerDetails2
             {
                 EmailAdrress = "futofutavi@footer.com"
             };

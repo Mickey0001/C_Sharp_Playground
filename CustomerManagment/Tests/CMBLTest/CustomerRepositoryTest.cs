@@ -11,7 +11,7 @@ namespace CMBLTest
         {
             //Arrange
             var customerRepository = new CustomerRepository();
-            var expected = new Customer(1)
+            var expected = new CustomerDetails2(1)
             {
                 EmailAdrress = "bobosmard@xvideos.com",
                 FirstName = "Bobo ",

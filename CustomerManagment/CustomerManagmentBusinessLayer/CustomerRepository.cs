@@ -11,11 +11,11 @@ namespace CustomerManagmentBusinessLayer
 
         private AddressRepository addressRepository { get; set; }
 
-        public Customer Retrieve(int customerID)
+        public CustomerDetails2 Retrieve(int customerID)
         {
             //Create the instance of the Customer class
             //Pass in the requested ID
-            Customer customer = new Customer(customerID);
+            CustomerDetails2 customer = new CustomerDetails2(customerID);
 
             //Code for retrieving the defined customer
 
@@ -31,7 +31,7 @@ namespace CustomerManagmentBusinessLayer
             return customer;
 
         }
-        public bool Save(Customer customer)
+        public bool Save(CustomerDetails2 customer)
         {
             //Saves the passed in customer
             return true;

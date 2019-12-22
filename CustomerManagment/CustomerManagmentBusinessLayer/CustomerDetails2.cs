@@ -3,14 +3,14 @@ using Customer.Common;
 
 namespace CustomerManagmentBusinessLayer
 {
-    public class Customer : EntityBase, ILoggable
+    public class CustomerDetails2 : EntityBase, ILoggable
     {
-        public Customer(): this(0)
+        public CustomerDetails2(): this(0)
         {
 
         }
 
-        public Customer(int customerID)
+        public CustomerDetails2(int customerID)
         {
             CustomerID = customerID;
             AddressList = new List<Address>();
@@ -59,7 +59,9 @@ namespace CustomerManagmentBusinessLayer
             return isValid;
         }
 
+#pragma warning disable CS0539 // 'CustomerDetails2.log()' in explicit interface declaration is not found among members of the interface that can be implemented
         string ILoggable.log()
+#pragma warning restore CS0539 // 'CustomerDetails2.log()' in explicit interface declaration is not found among members of the interface that can be implemented
         {
             throw new System.NotImplementedException();
         }

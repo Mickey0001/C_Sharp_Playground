@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CMBLTest", "Tests\CMBLTest\CMBLTest.csproj", "{A813D3FC-FF5C-4858-9A6C-988D78EAEC6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customer.Common", "Customer.Common\Customer.Common.csproj", "{E22481A5-71E2-474E-92D6-72DE0DC07CB6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Customer.Common", "Customer.Common\Customer.Common.csproj", "{E22481A5-71E2-474E-92D6-72DE0DC07CB6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Customer.CommonTest", "Tests\Customer.CommonTest\Customer.CommonTest.csproj", "{6E6D7D55-880F-4F93-A0F8-C7BD88C4FD09}"
 EndProject
@@ -23,8 +23,8 @@ Global
 		{D058D69E-E7E3-4E6C-8C46-B12072374A8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D058D69E-E7E3-4E6C-8C46-B12072374A8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D058D69E-E7E3-4E6C-8C46-B12072374A8C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A813D3FC-FF5C-4858-9A6C-988D78EAEC6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A813D3FC-FF5C-4858-9A6C-988D78EAEC6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A813D3FC-FF5C-4858-9A6C-988D78EAEC6B}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{A813D3FC-FF5C-4858-9A6C-988D78EAEC6B}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{A813D3FC-FF5C-4858-9A6C-988D78EAEC6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A813D3FC-FF5C-4858-9A6C-988D78EAEC6B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E22481A5-71E2-474E-92D6-72DE0DC07CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

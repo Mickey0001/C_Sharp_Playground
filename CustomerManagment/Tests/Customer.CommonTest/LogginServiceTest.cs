@@ -13,7 +13,7 @@ namespace Customer.CommonTest
         {
             var changedItems = new List<ILoggable>();
 
-            var customer = new CustomerDetails(1)
+            var customer = new CustomerDetails2(1)
             {
                 EmailAdrress = "bobosmard@xvideos.com",
                 FirstName = "Bobo ",
