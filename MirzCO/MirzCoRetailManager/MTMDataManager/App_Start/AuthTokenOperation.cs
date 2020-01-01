@@ -27,21 +27,22 @@ namespace MTMDataManager.App_Start
                             type = "string",
                             name = "grant_type",
                             required = true,
-                            @in = "formdata"
+                            @in = "formData",
+                            @default = "password"
                         },
                         new Parameter
                         {
                             type = "string",
                             name = "username",
-                            required = true,
-                            @in = "formdata"
+                            required = false,
+                            @in = "formData"
                         },
                         new Parameter
                         {
                             type = "string",
                             name = "password",
-                            required = true,
-                            @in = "formdata"
+                            required = false,
+                            @in = "formData"
                         },
                     }
                 }
