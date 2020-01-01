@@ -4,6 +4,7 @@ using MTMDataManager;
 using Swashbuckle.Application;
 using MTMDataManager.App_Start;
 
+//This line disables Swagger, to be used in PROD
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
 namespace MTMDataManager
