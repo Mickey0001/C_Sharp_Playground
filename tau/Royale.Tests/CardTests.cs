@@ -2,6 +2,7 @@ using System.IO;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using Royale.Pages;
 
 namespace Royale.Tests
 {
@@ -13,6 +14,8 @@ namespace Royale.Tests
         public void BeforeEachTest()
         {
             driver = new ChromeDriver(Path.GetFullPath(@"../../../../" + "_drivers"));
+            driver.Url = "https://statsroyale.com";
+            driver.Manage().Window.Maximize();
         }
 
         [TearDown]
@@ -22,39 +25,27 @@ namespace Royale.Tests
         }
 
         [Test]
-        public void ElixirGolemIsOnTheCardsPage()
+        public void ThreeMusketeersIsOnTheCardsPage()
         {
-            //1 Go to Stats Rolayle page
-            driver.Url = "https://statsroyale.com/";
-            driver.Manage().Window.Maximize();
-            //2 Click on the Sards link
-            driver.FindElement(By.CssSelector("a[href='/cards']")).Click();
-            //3 Assert that Elixir Golem is displayed
-            var ThreeMusketeers = driver.FindElement(By.CssSelector("a[href*='Three+Musketeers']"));
-            Assert.That(ThreeMusketeers.Displayed);
+
+            var cardsPage = new CardsPage(driver);
+            var threeMusketeers = cardsPage.GoTo().GetCardByName("Three Musketeers");
+            Assert.That(threeMusketeers.Displayed);
         }
 
 
         [Test]
-        public void ElixirGolemHeadersAreCorrectOnCardDetailsPage()
+        public void ThreeMusketeerAreCorrectOnCardDetailsPage()
         {
-            //1 Go to Stats Rolayle page
-            driver.Url = "https://statsroyale.com/";
-            driver.Manage().Window.Maximize();
-            //2 Click on the Cards link
-            driver.FindElement(By.CssSelector("a[href='/cards']")).Click();
-            //3 Go to the Details page
-            var ThreeMusketeers = driver.FindElement(By.CssSelector("a[href*='Three+Musketeers']"));
-            //4 Assert basic header stats
-            var CardName = driver.FindElement(By.CssSelector("[class*='cardName']")).Text;
-            var CardCategories = driver.FindElement(By.CssSelector(".card__rarirty")).Text.Split(", ");
-            var CardType = CardCategories[0];
-            var CardArena = CardCategories[1];
-            var CardRarirty = driver.FindElement(By.CssSelector(".card__rare")).Text;
+            new CardsPage(driver).GoTo().GetCardByName("Ice Sprit").Click();
+            var cardDetails = new CardsPage(driver);
+            var (category, arena) = cardDetails.GetCardCategory();
+            var CardName = cardDetails.Map.CardName.Text;
+            var CardRarirty = cardDetails.Map.CardRarirty.Text;
 
             Assert.AreEqual("Three Musketeers", CardName);
-            Assert.AreEqual("Troop", CardType);
-            Assert.AreEqual("Arena 7", CardArena);
+            Assert.AreEqual("Troop", category);
+            Assert.AreEqual("Arena 7", arena);
             Assert.AreEqual("Rare", CardRarirty);
         }
     }

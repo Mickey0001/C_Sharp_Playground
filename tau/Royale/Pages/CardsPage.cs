@@ -39,5 +39,3 @@ namespace Royale.Pages
     }
 
 }
-
-//14:56
