@@ -39,6 +39,7 @@ namespace Royale.Tests
         {
             new CardsPage(driver).GoTo().GetCardByName("Ice Sprit").Click();
             var cardDetails = new CardsPage(driver);
+
             var (category, arena) = cardDetails.GetCardCategory();
             var CardName = cardDetails.Map.CardName.Text;
             var CardRarirty = cardDetails.Map.CardRarirty.Text;
@@ -47,6 +48,23 @@ namespace Royale.Tests
             Assert.AreEqual("Troop", category);
             Assert.AreEqual("Arena 7", arena);
             Assert.AreEqual("Rare", CardRarirty);
+        }
+
+        
+        [Test]
+        public void MirrorAreCorrectOnCardDetailsPage()
+        {
+            new CardsPage(driver).GoTo().GetCardByName("Mirror").Click();
+            var cardDetails = new CardsPage(driver);
+            
+            var (category, arena) = cardDetails.GetCardCategory();
+            var CardName = cardDetails.Map.CardName.Text;
+            var CardRarirty = cardDetails.Map.CardRarirty.Text;
+
+            Assert.AreEqual("Mirror", CardName);
+            Assert.AreEqual("Spell", category);
+            Assert.AreEqual("Arena 12", arena);
+            Assert.AreEqual("Epic", CardRarirty);
         }
     }
 }

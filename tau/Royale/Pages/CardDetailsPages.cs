@@ -1,8 +1,7 @@
 using System;
 using System.Linq;
-using Framework.Models;
-using Framework.Selenium;
 using OpenQA.Selenium;
+using Framework.Models;
 
 namespace Royale.Pages
 {
@@ -49,10 +48,10 @@ namespace Royale.Pages
 
     public class CardDetailsPageMap
     {
-        public IWebElement CardName => _driver.FindElement(By.CssSelector("div[class*='cardName']"), "Card Name");
+        public IWebElement CardName => driver.FindElement(By.CssSelector("div[class*='cardName']"), "Card Name");
 
-        public IWebElement CardCategory => Driver.FindElement(By.CssSelector("div[class*='card__rarity']"), "Card Category");
+        public IWebElement CardCategory => driver.FindElement(By.CssSelector("div[class*='card__rarity']"), "Card Category");
 
-        public IWebElement CardRarity => Driver.FindElement(By.CssSelector("div[class*='rarityCaption']"), "Card Rarity");
+        public IWebElement CardRarity => driver.FindElement(By.CssSelector("div[class*='rarityCaption']"), "Card Rarity");
     }
 }
